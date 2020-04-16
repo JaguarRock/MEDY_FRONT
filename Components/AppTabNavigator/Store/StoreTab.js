@@ -26,7 +26,7 @@ export default class StoreTab extends Component {
 const styles = StyleSheet.create({
     wrapper: {
         flex: 1,
-        backgroundColor: '#e5e5e5'
+        backgroundColor: '#fcfcfc'
     },
     tabName: {
         marginTop: 80,

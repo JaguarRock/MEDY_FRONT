@@ -54,7 +54,8 @@ const styles = StyleSheet.create({
         width: 160,
         height: 3,
         marginLeft: 20,
-        backgroundColor: 'rgba(255, 90, 95, 0.9)'
+        backgroundColor: 'rgba(255, 90, 95, 0.9)',
+        marginTop: 3
     },
     todayScroll: {
         marginTop: 19,

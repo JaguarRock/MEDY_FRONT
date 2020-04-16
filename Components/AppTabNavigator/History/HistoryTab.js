@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Icon } from 'native-base';
 import SearchBar from '../SearchBar';
+import MedicineHistory from './MedicineHistory';
 
 export default class HistoryTab extends Component {
 
@@ -22,6 +23,7 @@ export default class HistoryTab extends Component {
                 <View style={styles.searchBar}>
                     <SearchBar/>
                 </View>
+                <MedicineHistory/>
             </View>
         );
     }
