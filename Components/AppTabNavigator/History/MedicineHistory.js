@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 import ScrollableTabView, { DefaultTabBar, ScrollableTabBar } from 'react-native-scrollable-tab-view';
 import { Icon } from 'native-base';
+import MedicineList from './MedicineList';
+import MedicineCalendar from './MedicineCalendar';
 
 export default class MedicineHistory extends Component {
     render() {
@@ -17,8 +19,8 @@ export default class MedicineHistory extends Component {
             tabBarUnderlineStyle={styles.underlineStyle}
             initialPage={2}
             >
-                <View key={'1'} tabLabel={'리스트'}></View>
-                <View key={'2'} tabLabel={'캘린더'}></View>
+                <View tabLabel={'리스트'}><MedicineList/></View>
+                <View tabLabel={'캘린더'}><MedicineCalendar/></View>
             </ScrollableTabView>
         );
     }

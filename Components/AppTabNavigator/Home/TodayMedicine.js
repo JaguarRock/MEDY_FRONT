@@ -26,23 +26,40 @@ export default class Categories extends Component {
                 <View style={styles.square}></View>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}
                 >
-                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text></Card>
-                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text></Card>
-                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text></Card>
-                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text></Card>
-                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text></Card>
-                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text></Card>
+                    <Card style={styles.todayCardContainer}>
+                        <Text style={styles.todayCardText}>감기</Text>
+                        <Text style={styles.leftTimeText}>남은 시간</Text>
+                        <Text style={styles.leftTime}>00 : 00: 00</Text>
+                    </Card>
+                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text>
+                        <Text style={styles.leftTimeText}>남은 시간</Text>
+                        <Text style={styles.leftTime}>00 : 00: 00</Text></Card>
+                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text>
+                        <Text style={styles.leftTimeText}>남은 시간</Text>
+                        <Text style={styles.leftTime}>00 : 00: 00</Text></Card>
+                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text>
+                        <Text style={styles.leftTimeText}>남은 시간</Text>
+                        <Text style={styles.leftTime}>00 : 00: 00</Text></Card>
+                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text>
+                        <Text style={styles.leftTimeText}>남은 시간</Text>
+                        <Text style={styles.leftTime}>00 : 00: 00</Text></Card>
+                    <Card style={styles.todayCardContainer}><Text style={styles.todayCardText}>감기</Text>
+                        <Text style={styles.leftTimeText}>남은 시간</Text>
+                        <Text style={styles.leftTime}>00 : 00: 00</Text></Card>
                 </ScrollView>
                 <Text style={styles.recentMedi}>최근 먹었던 약</Text>
                 <View style={styles.square}></View>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-                    <Card style={styles.recentCardContainer}><Text style={styles.recentCardText}>감기</Text></Card>
+                    <Card style={styles.recentCardContainer}>
+                        <Text style={styles.recentCardText}>감기</Text>
+                        <Text style={styles.recentDate}>2019 / 03 / 05</Text>
+                    </Card>
                     <Card style={styles.recentCardContainer}><Text style={styles.recentCardText}>감기</Text></Card>
                     <Card style={styles.recentCardContainer}><Text style={styles.recentCardText}>감기</Text></Card>
                     <Card style={styles.recentCardContainer}><Text style={styles.recentCardText}>감기</Text></Card>
                     <Card style={styles.recentCardContainer}><Text style={styles.recentCardText}>감기</Text></Card>
                 </ScrollView>
-                
+
             </SafeAreaView>
 
         );
@@ -71,9 +88,27 @@ const styles = StyleSheet.create({
     },
     todayCardText: {
         fontSize: 50,
+        textAlign: 'center',
+        marginTop: 60
+    },
+    leftTimeText: {
+        fontSize: 20,
+        marginTop: 40,
+        textAlign: 'center'
+    },
+    leftTime: {
+        fontSize: 20,
+        marginTop: 10,
+        textAlign: 'center',
     },
     recentCardText: {
         fontSize: 20,
+        marginTop: 20,
+        marginLeft: 20
+    },
+    recentDate: {
+        marginTop: 25,
+        marginLeft: 20,
     },
     todayCardContainer: {
         width: 175,
@@ -81,7 +116,7 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         backgroundColor: '#FFFFFF',
         marginLeft: 20,
-        marginTop: 19, 
+        marginTop: 19,
     },
     recentCardContainer: {
         width: 175,
@@ -90,5 +125,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
         borderRadius: 6,
         backgroundColor: '#FFFFFF',
+        flexDirection: 'row'
     }
 })
