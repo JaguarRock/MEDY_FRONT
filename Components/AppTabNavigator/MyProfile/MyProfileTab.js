@@ -12,7 +12,7 @@ export default class MyProfileTab extends Component {
 
     render() {
         return (
-            <View style={style.container}>
+            <View style={style.wrapper}>
                 <Text>MyProfileTab</Text>
             </View>
         );
@@ -20,9 +20,7 @@ export default class MyProfileTab extends Component {
 }
 
 const style = StyleSheet.create({
-    container: {
+    wrapper: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
     }
 });
