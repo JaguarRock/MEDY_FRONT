@@ -4,6 +4,7 @@ import { Icon } from 'native-base';
 import StoreRecommend from './StoreRecommend';
 import SearchBar from '../SearchBar';
 
+
 export default class StoreTab extends Component {
 
     static navigationOptions = {
@@ -55,6 +56,6 @@ const styles = StyleSheet.create({
         flex: 1
     },
     searchBar: {
-        flex: 1,
+        flex: 1
     }
 });
