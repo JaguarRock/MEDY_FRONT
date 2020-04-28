@@ -8,6 +8,13 @@
 
 종합프로젝트설계1
 
+## Installation
+
+1. `git clone [our repository URL]`
+2. `npm install`
+3. `npm start`
+4. Expo localhost에서 해당 에뮬레이터(Android/iOS) 실행
+
 ## Environment
 
 - React Native
