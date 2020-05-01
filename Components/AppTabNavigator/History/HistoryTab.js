@@ -23,7 +23,9 @@ export default class HistoryTab extends Component {
                 <View style={styles.searchBar}>
                     <SearchBar/>
                 </View>
-                <MedicineHistory/>
+                <View>
+                    <MedicineHistory/>
+                </View>
             </View>
         );
     }

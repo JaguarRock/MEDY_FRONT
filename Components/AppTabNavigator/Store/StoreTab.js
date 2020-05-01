@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, CheckBox } from 'react-native';
 import { Icon } from 'native-base';
 import StoreRecommend from './StoreRecommend';
 import SearchBar from '../SearchBar';
+import NutrList from './NutrList'
 
 
 export default class StoreTab extends Component {
@@ -26,9 +27,10 @@ export default class StoreTab extends Component {
                 </View>
                 <View style={styles.searchBar}>
                     <SearchBar />
-                    
                 </View>
-                
+                <View style={styles.nutrList}>
+                    <NutrList/>
+                </View>
             </View>
         );
     }
@@ -53,9 +55,12 @@ const styles = StyleSheet.create({
         color: '#445544'
     },
     storeRecommend: {
-        flex: 1
+        flex: 2
     },
     searchBar: {
+        flex: 0.4,
+    },
+    nutrList: {
         flex: 1
     }
 });

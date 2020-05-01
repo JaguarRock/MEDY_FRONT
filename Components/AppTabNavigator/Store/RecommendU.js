@@ -40,7 +40,7 @@ export default class RecommendU extends Component {
 const styles = StyleSheet.create({
     todayCardContainer: {
         width: 160,
-        height: 160,
+        height: 200,
         borderRadius: 6,
         backgroundColor: '#FFFFFF',
         marginLeft: 20,
